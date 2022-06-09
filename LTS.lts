@@ -1,0 +1,29 @@
+Company 	= (setName -> Company
+			| getName -> Company
+			| setTotalShares -> Company
+			| getTotalShares -> Company
+			| setAvailableNumberOfShares -> Company
+			| getAvailableNumberOfShares -> Company
+			| setPrice -> Company
+			| getPrice -> Company).
+
+Client 		= (getStocks -> Client
+			| setStocks -> Client
+			| buy -> Client
+			| sell -> Client
+			| buyLow -> Client
+			| sellHigh -> Client
+			| deposit -> Client
+			| withdraw -> Client
+			| removeCompany -> Client).
+
+StockExchange = (registerCompany -> StockExchange
+			| deRegisterCompany -> StockExchange
+			| addClient -> StockExchange
+			| removeClient -> StockExchange
+			| getClients -> StockExchange
+			| getCompanies -> StockExchange
+			| setPrice -> StockExchange
+			| changePriceBy -> StockExchange).
+
+|| 
